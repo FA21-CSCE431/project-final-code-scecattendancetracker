@@ -57,6 +57,16 @@ Run the app
 
 The application can be seen using a browser and navigating to http://localhost:3000/
 
+To create admin credentials after signing in to the site, CTRL+C in terminal, and open the rails console. 
+
+ `rails console`
+ `member = Member.find(1)`
+ `member.admin = true`
+ `member.is_member = true`
+ `member.update()`
+
+Then exit the console and start the rails server.
+
 ## Environmental Variables/Files ##
 
 
